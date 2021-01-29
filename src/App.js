@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import YoutubeForm from "./components/YoutubeForm";
+import { Helmet } from "react-helmet";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Helmet>
+        <title>Hello World</title>
+        <meta name='description' content='this is a glitch i wonder if htere'/>
+        <meta name='author' content='ibrahim yaacob'/>
+        <body class='megalodone'/>
+      </Helmet>
+
+      <YoutubeForm />
     </div>
   );
 }
